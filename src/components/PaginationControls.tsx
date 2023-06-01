@@ -21,7 +21,7 @@ export default function PaginationControls ({
   }, [page])
 
   return (
-    <div className={style.paginationBtns}>
+    <div className={`${style.paginationBtns} mb-4`}>
       <button
         className={style.paginationBtn}
         onClick={() => onPage(page - 1)}
@@ -31,7 +31,7 @@ export default function PaginationControls ({
       </button>
       <div className={style.paginationText}>
         <input
-          className={style.pageNumber}
+          className={`${style.pageNumber} bg-gray-100 dark:bg-gray-900 text-black dark:text-white`}
           type='text'
           inputMode='numeric'
           pattern='[0-9]*'
