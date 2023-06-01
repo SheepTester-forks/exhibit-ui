@@ -19,7 +19,7 @@ type HomePageProps = {}
 export default function Home ({}: HomePageProps) {
   const [nfts, setNfts] = useState(() => {
     const nftIds: string[] = []
-    for (let i = 0; i < 67; i++) {
+    for (let i = 0; i < 134; i++) {
       nftIds.push(`nft${i}`)
     }
     return nftIds
